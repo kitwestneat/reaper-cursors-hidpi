@@ -1,0 +1,6 @@
+Copy these cursors to ~/.config/REAPER/Cursors/
+
+To generate the cursors:
+- ImageMagick can upscale .cur files, but it saves them as .ico, which doesn't have the hotspot info.
+- .ico is almost the same as .cur, but has a slightly different header so there's a python script that rewrites the header with the hotspot info
+- the hotspot info is at 2 x 16bit starting at byte 10 of the .cur file
